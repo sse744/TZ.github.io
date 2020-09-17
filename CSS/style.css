@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+    font-family: 'Raleway', sans-serif;
+    
+}
+.main-slaogn {
+    padding-left: 437px;
+    padding-top: 172px;
+
+}
+.adaptive{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.broccoli2{
+    height: 400px;
+    display: none;
+}
+.main-title{
+    font-style: normal;
+    font-weight: 795;
+    font-size: 125px;
+    line-height: 153px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F6F6F6;
+    margin: 0;
+}
+.second-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 105px;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 65px;
+}
+.spoilers{
+    padding-left: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    margin: 0;
+}
+.block-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin-left: 130px;
+    display: none;
+    word-break: normal;
+}
+
+.pluss-off_active .block-text{
+    transition: 0.5s;
+    display: block;
+}
+
+.colortext{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px; 
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FF3F84;
+}
+.block-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 55px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    word-break: normal;
+}
+.pluss-off{
+    border: 1px solid #E41579;
+    box-sizing: border-box;
+    display: block;
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    background-color: #ffff;
+    cursor: pointer;
+    margin-right: 25px;
+    position:relative;
+    overflow:hidden; 
+    flex:none;
+   -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1); 
+}
+.pluss-off:hover{
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3); 
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.pluss-off_active .pluss-off{
+    box-sizing: border-box;
+    display: block;
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    background-color: #E41579;
+    cursor: pointer;
+    margin-right: 25px;
+    position:relative;
+    overflow:hidden; 
+    flex:none;
+   -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1); 
+}
+.pluss-off span::before,
+.pluss-off span::after{
+   position: absolute; 
+   top: 50%; margin-top: -1px;
+   left: 50%; margin-left: -10px;
+   width: 20px;
+   height: 2px;
+   background-color: #E41579;
+}
+.pluss-off span::before,
+.pluss-off span::after{
+   content: '';
+   display: block;
+   transition: 0.5s;
+}
+.pluss-off span::before{
+    transform: rotate(90deg);
+}
+.pluss-off span::after{
+    transform: rotate(180deg);
+}
+.pluss-off_active span::before{
+    transition: 0.5s;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+.pluss-off_active span::after{
+    transition: 0.5s;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+.broccoli{
+   height: 645px;
+}
+.broccoli3{
+    display: none;
+}
+@media(max-width:768px){
+.spoilers {
+    padding-left: 0px;
+}
+.block{
+    margin-right: 50px;
+}
+.broccoli {
+    display: none;
+}
+.broccoli2{
+    height: 280px;
+    display: block;
+    margin-left: -20px;
+}
+.main-slaogn{
+    padding-left: 50px;
+    padding-top: 172px;
+}
+.main-title{
+    font-size: 60px; 
+    margin-left: 145px;
+
+}
+.second-title {
+    font-size: 15px;
+    margin-top: -100px;
+    margin-left: 90px;
+}
+}
+@media(max-width:480px){
+.block{
+    margin-left: -60px;
+}
+.broccoli2{
+    display: none;
+}
+.main-title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 5px;
+}
+.second-title {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: -150px;
+}
+.broccoli3{
+    display: block;
+    padding-left: 95px;
+}
+}
